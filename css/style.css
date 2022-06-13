@@ -51,6 +51,11 @@ header nav li {
     list-style: none;
 }
 
+.navigation nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .banner {
     background-image: url("../img/banner123.jpg");
     background-repeat: no-repeat;
@@ -59,7 +64,25 @@ header nav li {
     height: 732px;
 }
 
-.cards img {
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.cards a {
+    min-width: 335px;
+    max-width: 550px;
+    width: 30%;
+    min-height: 534px;
+    max-height: 650px;
+
+}
+
+.cards a img {
     width: 335px;
     height: 534px;
     border-radius: 31px;
@@ -71,12 +94,19 @@ header nav li {
     flex-direction: column;
     align-items: center;
     gap: 37px;
+    width: max-content;
+    justify-content: center;
 }
+
+
 
 .cards {
     display: flex;
-    flex-direction: row;
-    gap: 36px;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -84,6 +114,9 @@ header nav li {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
 }
 
 .video {
@@ -92,17 +125,25 @@ header nav li {
     flex-direction: column;
     align-items: center;
     gap: 37px;
+    width: 80%;
 }
 
 .video h1 {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    min-width: 325px;
+    max-width: 800px;
 }
 
 .video iframe {
-    width: 70%;
     height: 534px;
+    min-width: 325px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .contact img {
