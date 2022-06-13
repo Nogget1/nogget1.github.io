@@ -86,6 +86,12 @@ main {
     width: 335px;
     height: 534px;
     border-radius: 31px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.cards a img #fact1 {
+    object-position: right;
 }
 
 .curiosidades {
